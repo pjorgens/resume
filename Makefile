@@ -1,4 +1,4 @@
-all: cleanall light dark html clean
+all: cleanall light dark cv-light cv-dark html clean
 
 # Light theme
 light:
@@ -25,7 +25,7 @@ dark:
 	mv ./aux/resume-dark.pdf ./out/resume-jorgensen-pierce-dark.pdf
 
 # cover letter
-cv:
+cv-light:
 	rm -rf ./aux
 	rm -f ./cv.pdf
 	rm -f embed-cv.html
@@ -35,6 +35,18 @@ cv:
 	latexmk -xelatex -shell-escape -output-directory ./aux ./cv.tex \
 		|| xelatex --shell-escape -output-directory ./aux ./cv.tex
 	mv ./aux/cv.pdf ./out/cv-jorgensen-pierce.pdf
+
+# cover letter
+cv-dark:
+	rm -rf ./aux
+	rm -f ./cv-dark.pdf
+	rm -f embed-cv-dark.html
+	rm -f cv-dark.html
+	mkdir -p ./aux
+	mkdir -p ./out
+	latexmk -xelatex -shell-escape -output-directory ./aux ./cv-dark.tex \
+		|| xelatex --shell-escape -output-directory ./aux ./cv-dark.tex
+	mv ./aux/cv-dark.pdf ./out/cv-jorgensen-pierce-dark.pdf
 
 # index.html
 define INDEX
