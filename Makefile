@@ -24,6 +24,18 @@ dark:
 		|| xelatex --shell-escape -output-directory ./aux ./resume-dark.tex
 	mv ./aux/resume-dark.pdf ./out/resume-jorgensen-pierce-dark.pdf
 
+# cover letter
+cv:
+	rm -rf ./aux
+	rm -f ./cv.pdf
+	rm -f embed-cv.html
+	rm -f cv.html
+	mkdir -p ./aux
+	mkdir -p ./out
+	latexmk -xelatex -shell-escape -output-directory ./aux ./cv.tex \
+		|| xelatex --shell-escape -output-directory ./aux ./cv.tex
+	mv ./aux/cv.pdf ./out/cv-jorgensen-pierce.pdf
+
 # index.html
 define INDEX
 <!DOCTYPE html>
