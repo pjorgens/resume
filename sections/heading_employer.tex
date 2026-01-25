@@ -3,38 +3,42 @@
 % ---------------------------------
 
 % Write name
-\vc{\Huge\ceraproblack{Pierce H. Jorgensen }\small\cerapro{He/Him}}
-\hfill
+\vc{\Huge\ceraproblack{Pierce Jorgensen}}
 % Employer logo
 \ifthenelse{\value{light}=1}
   {
-  \vc{\includegraphics[height=15pt, keepaspectratio]{logo}}}
+    \hfill
+    \vc{\includegraphics[height=50pt, keepaspectratio]{logo}}
+  }
   {
-  \vc{\includegraphics[height=15pt, keepaspectratio]{logo-dark}}}
-\vc{\textcolor{logocolor}{@}}
-\vc{\includegraphics[width=55pt, height=55pt, keepaspectratio]{employer}}
+    \hfill
+    \vc{\includegraphics[height=50pt, keepaspectratio]{logo-dark}}
+  }
+\hspace{7pt}
+\vc{\includegraphics[height=45pt, keepaspectratio]{cka}}
 
 % Social icons
-\href{https://pierce-jorgensen.com}{
-  \textcolor{linkcolor}{\faIcon{home}}
-  \thinspace \thinspace
-  {\small{\textcolor{linkcolor}{Home}}}
-} $|$
 \href{mailto:jorgensenpierce@gmail.com}{
   \textcolor{linkcolor}{\faIcon{envelope}}
   \thinspace \thinspace
-  {\small{\textcolor{linkcolor}{jorgensenpierce@gmail.com}}}
+  {\small{\textcolor{linkcolor}{\underline{jorgensenpierce@gmail.com}}}}
 } $|$
 \href{https://linkedin.com/in/pjorgen1}{
   \textcolor{linkcolor}{\faIcon{linkedin}}
   \thinspace \thinspace
-  {\small{\textcolor{linkcolor}{LinkedIn}}}
+  {\small{\textcolor{linkcolor}{\underline{LinkedIn}}}}
 } $|$
-\href{https://github.com/pjorgen1}{
+\href{https://github.com/pjorgens}{
   \textcolor{linkcolor}{\faIcon{github}}
   \thinspace \thinspace
-  {\small{\textcolor{linkcolor}{GitHub}}}
+  {\small{\textcolor{linkcolor}{\underline{GitHub}}}}
+} $|$
+\href{https://soundcloud.com/disdroid_music}{
+  \textcolor{linkcolor}{\faIcon{cloud}}
+  \thinspace \thinspace
+  {\small{\textcolor{linkcolor}{\underline{SoundCloud}}}}
 } $|$
 \faPhone
 \thinspace \thinspace
 \small{775-232-8142}
+
