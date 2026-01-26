@@ -57,9 +57,9 @@ define INDEX
   </head>
   <body style="background-color:rgb(40, 40, 40);">
 	  <center>
-	  <object data="./resume-jorgensen-pierce-dark.pdf" type="application/pdf" width="70%" height="1500px">
-      </object>
 	  <object data="./resume-jorgensen-pierce.pdf" type="application/pdf" width="70%" height="1500px">
+      </object>
+	  <object data="./resume-jorgensen-pierce-dark.pdf" type="application/pdf" width="70%" height="1500px">
       </object>
 	  </center>
   </body>
